@@ -8,9 +8,10 @@ Projeto modularizado para continuar o MVP no navegador.
 
 ## Estrutura
 - `index.html` — carrega Phaser (global) e `src/main.js` (ES modules).
+  - `src/assets/` — sprites e outros assets (ex.: `red-dot.png`).
 - `src/config.js` — constantes (tamanho, velocidades, física).
 - `src/main.js` — configura e inicia o jogo.
-- `src/scenes/BootScene.js` — preloading e geração de texturas dos personagens.
+- `src/scenes/BootScene.js` — preloading e geração de texturas/sprites dos personagens.
 - `src/scenes/GameScene.js` — mapa, câmera, colisões, HUD.
 - `src/objects/Player.js` — personagem com movimento polido (coyote time, double jump, squash).
 - `src/objects/Enemy.js` — inimigo simples com patrulha.
