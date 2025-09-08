@@ -4,7 +4,8 @@ Projeto modularizado para continuar o MVP no navegador.
 ## Rodando localmente
 1) Descompacte.
 2) Sirva via HTTP (ex.: `python -m http.server 8000`) e abra `http://localhost:8000/`.
-3) Controles: P1 (WASD + F), P2 (Setas + /), R reinicia.
+3) Opcional: `npm run server` inicia o servidor simples de multiplayer (Socket.IO).
+4) Controles: P1 (WASD + F), R reinicia.
 
 ## Estrutura
 - `index.html` — carrega Phaser (global) e `src/main.js` (ES modules).
@@ -32,4 +33,5 @@ Eu não consigo acessar seu GitHub nem trabalhar “em background”. Mas posso:
 ## Dev com Vite (opcional)
 1) `npm i`
 2) `npm run dev`
-3) abre automaticamente em `http://localhost:5173/`
+3) `npm run server` em outro terminal para multiplayer.
+4) abre automaticamente em `http://localhost:5173/`
