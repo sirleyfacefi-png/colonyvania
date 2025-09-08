@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colonyvania – MVP</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27><text y=%2714%27 font-size=%2714%27>🐜</text></svg>">
+  <style>
+    html, body { height: 100%; margin: 0; background: #0a0f1a; }
+    #game { width: 100%; height: 100%; }
+    .hud { position: absolute; left: 8px; top: 8px; color: #d7e3ff; font: 14px/1.2 system-ui, sans-serif; text-shadow: 0 1px 0 #000; pointer-events:none; }
+    .hud .pill { display:inline-block; padding:4px 8px; margin:0 6px 6px 0; border-radius:999px; background:#142138; border:1px solid #223257; }
+    .credits { position: absolute; right: 8px; bottom: 8px; color:#7b8bbd; font: 12px system-ui, sans-serif; }
+  </style>
+  <!-- Phaser global build -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+  <div class="hud" id="hud"></div>
+  <div class="credits">P1: WASD + F | P2: Setas + / | R reinicia</div>
+  <!-- Our modules -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
