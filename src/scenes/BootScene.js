@@ -1,5 +1,7 @@
 // src/scenes/BootScene.js
 // Usa o Phaser global (window.Phaser)
+import { redDotBase64 } from '../assets/redDot.js';
+
 export default class BootScene extends Phaser.Scene {
   constructor() { super('Boot'); }
 
@@ -33,8 +35,8 @@ export default class BootScene extends Phaser.Scene {
     g.fillStyle(0xcde1ff,0.8); g.fillRoundedRect(0,0,36,16,4);
     g.generateTexture('hitbox', 36, 16);
 
-    // gera sprites das formigas (emo + padrão)
-    this.createAntTexture('ant1', 0x9fd2ff, true);
+    // sprite incorporado em Base64 para o "red-dot" e fallback gerado para o segundo jogador
+    this.load.image('red-dot', redDotBase64);
     this.createAntTexture('ant2', 0xffc38f, false);
   }
 
