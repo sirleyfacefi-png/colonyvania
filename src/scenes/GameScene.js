@@ -48,7 +48,7 @@ export default class GameScene extends Phaser.Scene {
 
     // players
     this.players = this.add.group();
-    const p1 = new Player(this, 120, 200, 'ant1', { left:'A', right:'D', up:'W', attack:'F' });
+    const p1 = new Player(this, 120, 200, 'red-dot', { left:'A', right:'D', up:'W', attack:'F' });
     const p2 = new Player(this, 160, 200, 'ant2', { left:'LEFT', right:'RIGHT', up:'UP', attack:'SLASH' });
     this.players.addMultiple([p1,p2]); p1.postCreate(); p2.postCreate();
 

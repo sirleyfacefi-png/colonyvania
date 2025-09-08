@@ -1,5 +1,7 @@
 // src/scenes/BootScene.js
 // Usa o Phaser global (window.Phaser)
+
+
 export default class BootScene extends Phaser.Scene {
   constructor() { super('Boot'); }
 
@@ -33,8 +35,9 @@ export default class BootScene extends Phaser.Scene {
     g.fillStyle(0xcde1ff,0.8); g.fillRoundedRect(0,0,36,16,4);
     g.generateTexture('hitbox', 36, 16);
 
-    // gera sprites das formigas (emo + padrão)
-    this.createAntTexture('ant1', 0x9fd2ff, true);
+    // carrega sprite externa para o "red-dot" e mantém fallback procedural para o segundo jogador
+    const redDotURL = new URL('../assets/red-dot.png', import.meta.url);
+    this.load.image('red-dot', redDotURL.href);
     this.createAntTexture('ant2', 0xffc38f, false);
   }
 
